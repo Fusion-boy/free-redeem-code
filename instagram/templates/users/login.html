@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <section class="wrapper">
+
+        <section id="top">
+
+            <div class="left">
+                <img src="{% static 'images/mockup.png' %}" alt="Mockup" />
+            </div>
+
+            <div class="right">
+
+                <div class="login">
+
+                    <h1>
+                        <a href="#">
+                            <img src='{% static "images/heading.png" %}' alt="Heading" />
+                        </a>
+                    </h1>
+
+                    <form action="" method="post">
+
+                        {% csrf_token %}
+
+                        <input type="text" name="username" id="user_name" placeholder="Phone number, username or email" required/>
+                        <input type="password" name="password" id="password" placeholder="Password" required/>
+                        <button type="submit">Login</button>
+
+                    </form>
+
+                    <h5 class="or">OR</h5>
+
+                    <a
+                        href="https://en-gb.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Den_US%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221kw8jtmyfilga1usu5qf1609pwc13zy5kj14ll8af22s3ttn0f3v7%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daee8093f-3323-4a4d-ad7c-c6fa2f1a6515%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221kw8jtmyfilga1usu5qf1609pwc13zy5kj14ll8af22s3ttn0f3v7%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0" class="facebook_login">
+
+                            <span>
+                                <img src='{% static "images/facebook.png" %}' alt="Facebook" />
+                            </span>
+
+                            <p>Log in with Facebook</p>
+                    </a>
+
+                    <a href="#" class="forgot_password">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+                <div class="signup">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+
+                <div class="install">
+                    <h5>Get the app</h5>
+
+                    <div class="apps">
+
+                        <a href="">
+                            <img src="{% static 'images/get-it-on-playstore.png' %}" alt="get-it-on-playstore">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'images/get-it-on-microsoft.png' %}" alt="get-it-on-microsoft">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="bottom">
+
+            <ul>
+                <li>
+                    <a href="">Meta</a>
+                </li>
+
+                <li>
+                    <a href="">About</a>
+                </li>
+
+                <li>
+                    <a href="">Blog</a>
+                </li>
+
+                <li>
+                    <a href="">Jobs</a>
+                </li>
+
+                <li>
+                    <a href="">Help</a>
+                </li>
+
+                <li>
+                    <a href="">API</a>
+                </li>
+
+                <li>
+                    <a href="">Privacy</a>
+                </li>
+
+                <li>
+                    <a href="">Terms</a>
+                </li>
+
+                <li>
+                    <a href="">Locations</a>
+                </li>
+
+                <li>
+                    <a href="">Instagram Lite</a>
+                </li>
+
+                <li>
+                    <a href="">Threads</a>
+                </li>
+
+                <li>
+                    <a href="">Contact Uploading & Non-Users</a>
+                </li>
+
+                <li>
+                    <a href="">Meta Verified</a>
+                </li>
+
+                <li>
+                    <a href="">English</a>
+                </li>
+
+                <li>
+                    <a href="">&copy; 2024 Instagram from Meta</a>
+                </li>
+                
+            </ul>
+
+        </section>
+
+    </section>
+{% endblock content %}

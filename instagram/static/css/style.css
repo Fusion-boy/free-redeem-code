@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    max-width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+section#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.left {
+}
+div.left img {
+    width: auto;
+    height: 82vh;
+}
+div.right {
+    width: 47%;
+}
+div.right div.login {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 42px 42px 22px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+div.right div.login h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+div.right div.login h1 a {
+    display: inline-block;
+}
+div.right div.login a img {
+    width: 70%;
+}
+div.right div.login form {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+}
+div.right div.login form input {
+    width: 100%;
+    font-size: 12px;
+    padding: 9px 0px 9px 7px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+}
+div.right div.login form input[type="text"] {
+    margin-bottom: 6px;
+}
+div.right div.login form input[type="password"] {
+    margin-bottom: 15px;
+}
+div.right div.login form button {
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 149, 246, 0.7);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px 0;
+}
+
+div.right h5.or {
+    text-align: center;
+    margin: 24px 0 35px;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+div.right h5.or::after,
+div.right h5.or::before {
+    content: "";
+    background-color: #bebcbc;
+    width: 40%;
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+div.right h5.or::before {
+    margin-left: 0;
+    margin-right: 16px;
+}
+div.right div.login a.facebook_login {
+    display: flex;
+    justify-content: center;
+}
+div.right div.login a.facebook_login span img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 6px;
+}
+div.right div.login a.facebook_login p {
+    vertical-align: middle;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+}
+div.right div.login a.forgot_password {
+    display: inline-block;
+    margin-top: 20px;
+    color: #00376b;
+    font-size: 12px;
+    font-weight: 400;
+}
+div.right div.signup {
+    text-align: center;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 20px;
+}
+div.right div.signup p {
+    font-size: 14px;
+}
+div.right div.signup a {
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+div.right div.install div.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.right div.install h5 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+div.right div.install div.apps a {
+    height: 40px;
+    display: block;
+}
+div.right div.install div.apps img {
+    height: 100%;
+}
+div.right div.install div.apps img:first-child {
+    margin-right: 10px;
+}
+
+#bottom {
+    padding: 60px 0;
+}
+#bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+}
+#bottom ul li {
+    margin-right: 10px;
+}
+#bottom ul li a {
+    font-size: 13px;
+    color: rgb(115, 115, 115);
+}
+
+#home {
+    background: url(../images/AbstractPaper.png) no-repeat center center;
+    background-size: cover;
+
+    height: 100vh;
+}
+#home .wrapper {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    font-size: 40px;
+    text-align: center;
+}
+#home p {
+    font-size: 20px;
+}
+#hacker header {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 40px;
+    background: #1d1f1d;
+}
+#hacker button {
+    margin-right: 35px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #00ff41;
+    font-size: 16px;
+    font-weight: 700;
+}
+#hacker button:last-child {
+    margin-right: 0;
+}
+#hacker{
+    background: url(../images/matrix.gif) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+#hacker h1{
+    font-size: 48px;
+    text-align: center;
+}
+p > span{
+    font-weight: 700;
+}
+.victim a.button{
+    margin-top: 24px;
+    padding: 12px;
+    border: 2px solid #00FF41;
+    display: inline-block;
+    color: crimson;
+    font-size: 15px;
+    font-weight: 700;
+}
+.victim{
+    border: 2px solid #008F11;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+@media all and (max-width: 768px) {
+    .wrapper {
+        width: 72%;
+    }
+    section#top {
+        justify-content: center;
+    }
+    section#top div.left {
+        display: none;
+    }
+    section#top div.right {
+        width: 100%;
+    }
+}

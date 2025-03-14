@@ -24,6 +24,13 @@ INSTALLED_APPS = [
     'web',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.trycloudflare.com",
+    "https://*.ngrok.io",
+    "https://localhost",
+    "http://127.0.0.1"
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
